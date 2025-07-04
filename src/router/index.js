@@ -1,11 +1,10 @@
 // router/index.ts
-import { createRouter, createWebHistory } from 'vue-router/auto'
-import { routes as autoRoutes } from 'vue-router/auto-routes'
+import { createRouter, createWebHistory } from 'vue-router'
 
 // 수동 라우트 import
-import Main from '../include/Main.vue';
-import FAQ from '../components/FAQ.vue';
-import BA from '../components/B&A.vue';
+import Main from '../include/Main.vue'
+import FAQ from '../components/FAQ.vue'
+import BA from '../components/B&A.vue'
 
 import Eye1 from '@/components/eye/Eye1.vue'
 import Eye2 from '@/components/eye/Eye2.vue'
@@ -23,15 +22,15 @@ import Face from '@/components/Face.vue'
 import Fat from '@/components/Fat.vue'
 import Breast from '@/components/Breast.vue'
 
+// ✅ 수동 라우트 정의
+const routes = [
+  { path: '/', component: Main },         // 홈페이지 진입 시
+  { path: '/main', component: Main },     // 로고 클릭 시 이동
 
-// 수동 라우트 정의
-const manualRoutes = [
-  { path: '/', component: Main },
-  { path: '/main', component: Main },
   { path: '/faq', component: FAQ },
   { path: '/ba', component: BA },
 
-  { path: '/about', component: About }, 
+  { path: '/about', component: About },
 
   { path: '/nose1', component: Nose1 },
   { path: '/nose2', component: Nose2 },
@@ -48,18 +47,13 @@ const manualRoutes = [
   { path: '/Breast', name: 'breast', component: Breast },
 ]
 
-// 병합
-const routes = [
-  ...autoRoutes,
-  ...manualRoutes,
-]
-
+// ✅ createRouter 설정
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes,
 })
 
-// dynamic import error 대응 코드 그대로 유지
+// ✅ dynamic import 오류 대응 (그대로 유지)
 router.onError((err, to) => {
   if (err?.message?.includes?.('Failed to fetch dynamically imported module')) {
     if (localStorage.getItem('vuetify:dynamic-reload')) {

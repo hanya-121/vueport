@@ -196,7 +196,7 @@
 
 <script setup>
 import { ref, onMounted  } from 'vue'
-import logo from '@/assets/img/logo/logo-height.svg' 
+import logo from '@/assets/img/logo-height.svg' 
 
 const chatOpen = ref(false)
 

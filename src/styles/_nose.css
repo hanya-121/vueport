@@ -1,0 +1,237 @@
+@charset "UTF-8";
+/* 수술정보 ------------------------------------------------------------------------ */
+.info {
+  padding: 0 5% 150px 5%;
+}
+.info .title_font {
+  font-size: 64px;
+  margin-bottom: 40px;
+}
+.info .info-list {
+  row-gap: 40px;
+  margin: 0;
+}
+.info .info-item {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+.info .info-item .icon {
+  font-size: 72px;
+}
+.info .info-item .font_r {
+  font-size: 24px;
+  margin: 0;
+}
+.info .info-item .font_r .font_b {
+  display: block;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+  .info {
+    padding-bottom: 90px;
+  }
+  .info .title_font {
+    font-size: 64px;
+    margin-bottom: 40px;
+  }
+  .info .info-item .icon {
+    font-size: 56px;
+  }
+  .info .info-item .font_r,
+  .info .info-item .font_b {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .info {
+    padding-bottom: 70px;
+  }
+  .info .title_font {
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+  .info .info-list {
+    row-gap: 20px;
+  }
+  .info .info-item {
+    max-width: unset;
+  }
+  .info .info-item .icon {
+    font-size: 48px;
+  }
+  .info .info-item .font_r,
+  .info .info-item .font_b {
+    font-size: 24px;
+  }
+}
+@media (max-width: 320px) {
+  .info {
+    padding-bottom: 70px;
+  }
+  .info .title_font {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  .info .info-list {
+    row-gap: 20px;
+  }
+  .info .info-item .icon {
+    font-size: 40px;
+  }
+  .info .info-item .font_r,
+  .info .info-item .font_b {
+    font-size: 14px !important;
+  }
+}
+/* 수술효과 ------------------------------------------------------------------------ */
+.effect {
+  padding: 0 5% 150px 5%;
+  display: flex;
+  justify-content: center;
+}
+
+/* 타이틀 설정 */
+.title_font {
+  font-size: 64px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1024px) {
+  .title_font {
+    font-size: 64px;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 768px) {
+  .title_font {
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 320px) {
+  .title_font {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+}
+/* 이미지 설정 */
+.effect_img {
+  width: 1239px;
+  height: 1205px;
+  margin: 0 auto;
+  background: url(../assets/img/nose/effect_pc2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+  .effect {
+    padding: 0 5% 90px 5%;
+  }
+  .effect_img {
+    background: url(../assets/img/nose/effect_pd.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 1000px;
+  }
+}
+@media (max-width: 768px) {
+  .effect {
+    padding: 0 5% 70px 5%;
+  }
+  .effect_img {
+    background: url(../assets/img/nose/effect_tb.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 569px;
+  }
+}
+@media (max-width: 320px) {
+  .effect {
+    padding: 0 5% 70px 5%;
+  }
+  .effect_img {
+    background: url(../assets/img/nose/effect_mb.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 268px;
+  }
+}
+/* 주의사항 ------------------------------------------------------------------------ */
+.notice {
+  padding: 0 5% 0 5%;
+}
+
+/* 타이틀 설정 */
+.title_font {
+  font-size: 64px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1024px) {
+  .notice_t {
+    font-size: 48px; /* 폰트 사이즈 64 > 48로 변경 */
+  }
+}
+@media (max-width: 768px) {
+  .title_font {
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 320px) {
+  .title_font {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+}
+/* 박스 설정 */
+.box-gap {
+  margin-bottom: 30px;
+}
+
+.notice-box {
+  max-width: 1300px;
+  height: 100px;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+  padding-left: 5%;
+  font-size: 32px;
+  font-weight: 500;
+  background-color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .notice-box {
+    max-width: 640px;
+    height: 65px;
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .notice-box {
+    max-width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 320px) {
+  .notice-box {
+    max-width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=en.css.map */

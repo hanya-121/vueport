@@ -1,0 +1,225 @@
+//아이패드 프로
+@media (max-width: 1024px) and (min-width: 769px) {
+    .responsive-carousel{
+        margin-bottom: 90px;
+    }
+
+    .main-sec1{
+        margin-bottom: 90px;
+        // background-color: hotpink !important;
+
+        .main-sec1-container{
+            .main-sec1-img{
+                width: 420px;
+                height: 480px;
+            }
+
+            .main-sec1-textbox{
+                .main-sec1-title{
+                    font-size: 48px;
+                    margin-bottom: 40px;
+                }
+
+                .main-sec1-text{
+                    font-size: 20px;
+                }
+            }
+        } //main-sec1-container
+    } //main-sec1
+
+    .main-sec2{
+        margin-bottom: 90px;
+    }
+
+    .main-sec3{
+        margin-bottom: 90px;
+    }
+} //아이패드 프로
+
+
+
+
+
+//아이패드 미니
+@media (max-width: 768px) and (min-width: 375px){
+    .responsive-carousel{
+        margin-bottom: 70px;
+    }
+
+    .main-sec1{
+        margin-bottom: 70px;
+
+        .main-sec1-container{
+            .main-sec1-img{
+                width: 768px;
+                height: 768px;
+                margin-bottom: 70px;
+            }
+
+            .main-sec1-textbox{
+                
+                .main-sec1-title{
+                    font-size: 48px;
+                    margin-bottom: 30px;
+                    text-align: center;
+                }
+
+                .main-sec1-text{
+                    font-size: 18px;
+                    text-align: center;
+                }
+            }
+        } //main-sec1-container
+    } //main-sec1
+
+    .main-sec2{
+        margin-bottom: 70px;
+    }
+
+    .main-sec3{
+        margin-bottom: 70px;
+
+        .slide-content{
+            .slide-content-title{
+                font-size: 48px;
+                margin-bottom: 16px;
+            }
+        }
+    } //main-sec3
+
+    .main-sec4{
+        margin-bottom: 100px;
+
+        .main-sec4-title{
+            font-size: 48px;
+        }
+
+        .ytb-main-row{
+            margin-right: 0;
+
+            .ytb-main{
+                .ytb-main-video-container{
+                    height: 100%;
+
+                    .ytb-main-video{
+                        width: 100%;
+                        height: 400px;
+                    }
+                }
+            }
+        }
+
+        .ytb-sub{
+            .ytb-sub-container{
+                .ytb-sub-box{
+                    padding: 0 !important;
+
+                    .ytb-sub-title{
+                        font-size: 24px;
+                    }
+                }
+            }
+        } //ytb-sub
+    } //main-sec4
+} //아이패드 미니
+
+
+
+
+
+//모바일
+@media screen and (max-width: 375px){
+    .responsive-carousel{
+        margin-bottom: 70px;
+    }
+
+    .main-sec1{
+        margin-bottom: 70px;
+
+        .main-sec1-container{
+            .main-sec1-img{
+                width: 320px;
+                height: 320px;
+                margin-bottom: 48px;
+            }
+
+            .main-sec1-textbox{
+                
+                .main-sec1-title{
+                    font-size: 24px;
+                    margin-bottom: 30px;
+                    text-align: center;
+                }
+
+                .main-sec1-text{
+                    font-size: 14px;
+                    text-align: center;
+                }
+            }
+        } //main-sec1-container
+    } //main-sec1
+
+    .main-sec2{
+        margin-bottom: 70px;
+    }
+
+    .main-sec3{
+        padding : 24px 0;
+        margin-bottom: 70px;
+
+        .slide-content{
+
+            .slide-content-title{
+                font-size: 24px;
+                margin-bottom: 12px;
+            }
+
+            .slide-content-sub{
+                font-size: 18px;
+                margin-bottom: 24px;
+            }
+        }
+    } //main-sec3
+
+    .main-sec4{
+        margin-bottom: 100px;
+
+        .main-sec4-title{
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+
+        .ytb-main-row{
+            margin: 0;
+
+            .ytb-main{
+                .ytb-main-video-container{
+                    .ytb-main-video{
+                        height: 200px;
+                    }
+                }
+            } //ytb-main
+        } //ytb-main-row
+
+        .ytb-sub{
+            .ytb-sub-container{
+                .ytb-sub-box{
+                    padding: 0 !important;
+                    height: 120px;
+
+                    .ytb-sub-video-container{
+                        .ytb-sub-video{
+                            width: 150px;
+                            height: 100px;
+                        }
+                    }
+
+                    .ytb-sub-title{
+                        font-size: 18px;
+                        padding-left: 12px;
+                    }
+                } //ytb-sub-box
+            } //ytb-sub-container
+        } //ytb-sub
+    } //main-sec4
+} //모바일

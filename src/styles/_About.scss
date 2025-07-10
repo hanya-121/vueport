@@ -1,0 +1,497 @@
+/* 기본 설정 */
+* { margin: 0; padding: 0; }
+
+ul, li { list-style: none; }
+.title_font { font-size: 64px; }
+.font_b { font-size: 32px; color: #383838;}
+.font_r { font-size: 20px; color: #424242; }
+.font_m { font-size: 32px; color: #383838;}
+
+.clinic_sec,
+.doctor_sec {
+    max-width: 90%;
+    margin-bottom: 150px;
+    box-sizing: border-box;
+}
+.contact_sec,
+.map {
+    max-width: 90%;
+    margin-bottom: 90px;
+    box-sizing: border-box;
+}
+.transport_sec {
+    max-width: 70%;
+    box-sizing: border-box;
+}
+
+
+/* 병원 소개 ----------------------------------------------------------------------------------------- */
+.clinic_sec{
+    .clinic_img {
+        max-width: 800px;
+        height:704px;
+        background: url(../assets/img/about/hos.png) no-repeat;
+        background-size: 800px 704px;
+        border-radius: 10px;
+        margin-right: auto;
+    }
+    .title_font {
+        margin: 0 0 40px;
+        color: var(--color-primary) !important;
+    }
+    .clinic_list {
+        margin: 0px 0 0 40px;
+        .about_sub{
+            margin-bottom: 30px;
+            color: #645488;
+            //color: var(--color-primary) !important;  
+        }
+        .about_text{
+            margin-top: 20px;
+            padding: 0 5%;
+        }
+    }
+}
+
+
+/* 의료진 소개 ---------------------------------------------------------------------------------------- */
+.doctor_sec {
+    .doc_img2 {
+        max-width: 541px;
+        height: 650px;
+        background: url(../assets/img/about/doctor3.jpg) no-repeat;
+        background-size: 541px 700px;
+        border-radius: 10px;
+        margin-left: auto;
+    }
+    .title_font{
+        margin: 0 0 40px;
+        color: var(--color-primary) !important;
+    }
+    .doc_sub {
+        margin-top: -300px;
+        font-size: 20px !important;
+    }
+    .doc_name{
+        margin: 10px 0 20px 0;
+        font-size: 48px;
+    }
+
+    .doc_wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 50px;
+
+        .doc_img1 {
+            width: 393px;
+            height: 268px;
+            background: url(../assets/img/about/doctor2.png) no-repeat center center;
+            background-size: cover;
+            border-radius: 5px;
+        }
+        .doc_history li {
+            margin-bottom: 3px;
+        }
+    }
+}
+
+
+/* 운영시간 ----------------------------------------------------------------------------------------- */
+.contact_sec {
+    .contact_img {
+        background: url(../assets/img/about/contact1.png) no-repeat center center;
+        width: 1707px;
+        height: 744px;
+        background-size: 1707px 744px;
+    }
+    .contact_title {
+        color: var(--color-primary) !important;
+    }
+}
+
+
+
+/* 지도 --------------------------------------------------------------------------------------------- */
+.map_sec {
+    padding: 0;
+    .map {
+        padding: 0;
+        iframe {
+            width: 100%;
+            height: 400px;
+            display: block;
+        }
+    }
+}
+
+
+
+/* 교통 ----------------------------------------------------------------------------------------- */
+.transport-title {
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.transport-block {
+  margin-bottom: 20px;
+}
+
+.label-line {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.label-box {
+  padding: 4px 10px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.label-box.orange { background-color: #f7931e; }
+.label-box.blue   { background-color: #3498db; }
+.label-box.green  { background-color: #27ae60; }
+.label-box.red    { background-color: #e74c3c; }
+.label-box.beige  { background-color: #a58d3d; }
+.label-box.sky    { background-color: #53cbcf; }
+
+.desc {
+  font-size: 20px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+
+}
+
+
+/* 미디어쿼리 ----------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1024px) {
+    // 공통
+    .clinic_sec,
+    .doctor_sec,
+    .contact_sec,
+    .map_sec {
+        max-width: 90%;
+    }
+    .transport_sec {
+        max-width: 84%;
+    }
+
+    .clinic_sec,
+    .doctor_sec {
+        margin-bottom: 90px;
+    }
+    .contact_sec,
+    .map {
+        margin-bottom: 60px;
+    }
+
+    // 병원 소개
+    .clinic_sec{
+        .clinic_img {
+            max-width: 500px;
+            height: 750px;
+            background-size: 500px 750px;
+            background: url(../assets/img/about/hos1.png) no-repeat;
+        }
+        .about_title {
+            margin-bottom: 10px;
+        }
+        .clinic_list{
+            .about_sub {
+                font-size: 29px;
+                margin-bottom: 20px;
+            }
+            .about_text{
+                padding-left: 9%;
+                margin-top: 5px;
+            }
+        }
+    }
+
+    // 의료진 소개
+    .doctor_sec{
+        .title_font {
+            margin-bottom: 20px;
+        }
+        .doc_sub {
+            margin-top: -50px;
+        }
+        .doc_name {
+            margin-top: 0;
+        }
+        .doc_wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+
+    // 운영 시간
+    .contact_img {
+        background: url(../assets/img/about/contact2.png) no-repeat !important;
+        width: 900px;
+        height: 399px !important;
+        background-size: 900px 399px;
+    }
+
+    // 지도
+    .map_sec {
+        padding: 0;
+        .map iframe {
+            height: 250px;
+            width: 100%;
+            max-width: 100%;
+            display: block;
+        }
+    }
+
+    // 교통
+    .transport_sec {
+        padding: 0;
+        .transport-title {
+            font-size: 30px;
+        }
+        .font_b {
+            margin-bottom: 20px;;
+        }
+        .font_r {
+            font-size: 18px;
+        }
+        .desc {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    // 공통
+    .clinic_sec,
+    .doctor_sec,
+    .contact_sec,
+    .map_sec,
+    .transport_sec {
+        max-width: 90%;
+            .title_font{ font-size: 48px; }
+            .font_b { font-size: 24px;}
+            .font_r { font-size: 18px; }
+            .font_m { font-size: 24px; }
+    }
+    .clinic_sec,
+    .doctor_sec,
+    .contact_sec,
+    .map_sec {
+        margin-bottom: 70px;
+    }
+    
+    // 병원 소개
+    .clinic_sec {
+        .clinic_img {
+            max-width: 690px;
+            height: 550px;
+            background-size: 690px 550px;
+            background-position: center;
+            background: url(../assets/img/about/hos2.png);
+        }
+        .about_title {
+            text-align: left;
+        }
+        .clinic_list{
+            margin-top: 20px;
+            .about_sub {
+                margin-bottom: 20px;
+            }
+            .about_text{
+                padding: 0 4%;
+                margin-top: 7px;
+            }
+        }
+    }
+
+    // 의료진 소개
+    .doctor_sec{
+        .title_font {
+            margin-bottom: 40px;
+        }
+        .doc_sub {
+            margin-bottom: 5px;
+        }
+        .doc_name{
+            font-size: 35px;
+        }
+        .doc_img1 {
+            width: 100% !important;
+            height: 500px !important;
+            background: url(../assets/img/about/doctor3.jpg) no-repeat center center !important;
+            background-size: cover !important;
+            border-radius: 10px !important;
+        }
+        .doc_wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .doc_img2 {
+            //max-width: 100% !important;
+            height: 0px !important;
+            background: none;
+            //background-size: cover !important;
+        }
+    }
+
+    // 운영 시간
+    .contact_img {
+        background: url(../assets/img/about/contact3.png) no-repeat !important;
+        max-width: 680px !important;
+        height: 355px !important;
+        background-size: 680px 355px !important;
+    }
+
+    // 지도
+    .map_sec {
+        padding: 0;
+        margin-bottom: 0;
+        .map iframe {
+            height: 250px;
+            max-width: 100% !important;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    // 교통
+    .transport_sec {
+        padding: 0;
+        .transport-title {
+            font-size: 24px !important;
+        }
+        .font_r {
+            font-size: 18px;
+        }
+        .desc {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+        // 공통
+    .clinic_sec,
+    .doctor_sec,
+    .contact_sec,
+    .map_sec,
+    .transport_sec {
+        max-width: 90%;
+            .title_font{ font-size: 32px !important; }
+            .font_b { font-size: 18px !important; }
+            .font_r { font-size: 14px !important; }
+            .font_m { font-size: 18px !important; }
+    }
+    .clinic_sec,
+    .doctor_sec,
+    .contact_sec,
+    .map_sec {
+        margin-bottom: 50px !important;
+    }
+
+    // 병원 소개
+    .clinic_sec {
+        .clinic_img {
+            max-width: 329px;
+            height: 350px;
+            background-size: 329px 350px;
+            background-position: center;
+            background: url(../assets/img/about/hos4.png);
+        }
+        .clinic-text {
+            padding: 0;
+            margin: 0 30px 0 0;
+            .clinic_list {
+                padding: 0;
+                .about_text {
+                    padding: 0 6%;
+                }
+            }
+        }
+    }
+
+    // 의료진 소개
+    .doctor_sec{
+        .doc_name{
+            font-size: 22px !important;
+        }
+        .doc_img1 {
+            width: 100% !important;
+            height: 300px !important;
+            background: url(../assets/img/about/doctor3.jpg) no-repeat center center !important;
+            background-size: cover !important;
+            border-radius: 10px !important;
+        }
+    }
+
+    // 운영시간
+    .contact_sec{
+        padding: 0 auto 0;
+        .contact_img {
+            background: none;
+            height: 0px !important;
+            padding: 0;
+            margin: 0;
+        }
+        .contact_title {
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
+        }
+    }
+
+    // 지도
+    .map_sec {
+        padding: 0;
+        margin-bottom: 0 !important;
+        .map iframe {
+            height: 250px;
+            max-width: 100% !important;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    // 공통
+    .clinic_sec,
+    .doctor_sec,
+    .contact_sec,
+    .map_sec {
+        margin-bottom: 50px !important;
+    }
+
+    // 병원 소개
+    .clinic_sec {
+        .clinic_img {
+            max-width: 329px;
+            height: 300px;
+            background-size: 329px 300px;
+            background-position: center;
+            background: url(../assets/img/about/hos4.png);
+        }
+    }
+
+    // 지도
+    .map_sec {
+        padding: 0;
+        margin-bottom: 0 !important;
+        .map iframe {
+            height: 250px;
+            max-width: 100% !important;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .label-box.blue  { padding: 6px; }
+}

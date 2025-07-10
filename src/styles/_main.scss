@@ -1,0 +1,201 @@
+//캐러셀
+.responsive-carousel {
+height: 680px; /* 기본값 */
+margin-top: -50px;
+margin-bottom: 150px;
+
+    .slider-wrap{
+        position: relative;
+
+        .slider-text{
+            position: absolute;
+            bottom: 50px;
+            text-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+
+            .slider-btn{
+                display: block;
+                margin: 0 auto;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            }
+        } //slider-text
+    } //slider-wrap
+} //responsive-carousel
+
+
+
+//info
+.main-sec1{
+    width: 100%;
+    margin-bottom: 150px;
+
+    .main-sec1-container{
+        // border: 1px solid red;
+        width: 96%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        .main-sec1-img{
+            // border: 1px solid blue;
+            width: 969px;
+            height: 969px;
+            background: url(@/assets/img/main-sec1/doctor.png) no-repeat center center/cover;
+        } //main-sec1-img
+
+        .main-sec1-textbox{
+            // border: 1px solid blue;
+
+            .main-sec1-title{
+                font-size: 64px;
+                margin-bottom: 40px;
+            }
+            .main-sec1-text{
+                font-size: 20px;
+            } //main-sec1-text
+        } //main-sec1-textbox
+    } //main-sec1-container
+} //main-sec1
+
+
+
+//menu
+.main-sec2{
+    width: 96%;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
+
+
+//Selfie
+.main-sec3{
+    background-color: #eee9f0;
+    margin-bottom: 150px;
+    padding: 48px 0;
+
+    .slide-content{
+        padding: 0 2%;
+
+        .slide-content-title{
+            font-size: 64px;
+            margin-bottom: 40px;
+        }
+
+        .slide-content-sub{
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+    } //slide-content
+
+    .main-sec3-container{
+
+        .my-swiper {
+            height: 400px;
+
+            .custom-slide {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                overflow: hidden;
+
+                .slide-image {
+                    height: 500px;
+                    width: 100%;
+                    background-size: cover;
+                    background-position: center;
+                    transform: scale3d(1.3, 1.3, 1);
+                    transition: transform 1400ms ease;
+                } //slide-image
+            } //custom-slide
+
+            .swiper-pagination {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 85px;
+            } //swiper-pagination
+
+            .swiper-pagination-bullet {
+                background: tomato;
+                width: 22px;
+                height: 4px;
+                border-radius: 0;
+                margin: 0 4px;
+                transition: opacity 1s ease;
+            } //swiper-pagination-bullet
+        } //my-swiper
+    } //main-sec3-container
+} //main-sec3
+
+
+
+//Youtube
+.main-sec4{
+    width: 96%;
+    margin: 0 auto;
+    margin-bottom: 150px;
+
+    .main-sec4-title{
+        font-size: 64px;
+        margin-bottom: 40px;
+    }
+
+    .ytb-main-row{
+
+        .ytb-main{
+            // background-color: yellow;
+            padding: 0;
+            width: 100%;
+
+            .ytb-main-video-container{
+                height: 100%;
+
+                .ytb-main-video{
+                    // border: 2px solid red;
+                    width: 100%;
+                    height: 100%;
+                }
+            } //ytb-main-video-container
+        } //ytb-main
+    } //ytb-main-row
+
+    .ytb-sub{
+
+        .ytb-sub-container{
+
+            .ytb-sub-box{
+                width: 100%;
+                height: 190px;
+                border-bottom: 1px solid gray;
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+
+                .ytb-sub-video-container{
+                    // border: 1px solid red;
+
+                    .ytb-sub-video{
+                        height: 170px;
+                    }
+                }
+
+                .ytb-sub-title{
+                    padding-left: 24px;
+                    word-break: keep-all;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    font-size: 32px;
+                    text-overflow: ellipsis;
+                } //ytb-sub-title
+            } //ytb-sub-box
+
+            .ytb-sub-box:last-child{
+                border-bottom: none;
+            }
+        } //ytb-sub-container
+    } //ytb-sub
+} //main-sec4

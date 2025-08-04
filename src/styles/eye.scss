@@ -121,7 +121,7 @@
 // 모바일쿼리!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 /* 1024px 이하 (패드) */
-@media screen and (max-width: 1024px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 822px) {
 
   // 섹션 1_질문대상
   .en_sec_1 {
@@ -145,12 +145,6 @@
   width: 100% !important;
   height: 240px !important;
   }
-  // .eye_sec_2_img {
-  //   width: 600px !important;
-  //   height: 240px !important;
-  //   background-position: center center !important;
-  //   border: 1px solid red;
-  // }
 
   // 섹션 3_수술방법
   .en_sec_3 {margin-bottom: 90px;}
@@ -188,7 +182,68 @@
 }
 
 
+/* 820px 이하 (패드-에어) */
+@media screen and (max-width: 821px) and (min-width: 769px) {
+  .eye_sec_title {
+      padding: 0 0 !important;
+  }
+  // 섹션 1_질문대상
+  .en_sec_1 {
+    margin-bottom: 90px !important;
+    .en_sec_1_box {
+      max-width: 240px !important;
+      height: 150px !important;
+    }
+    .en_sec_1_icon {
+      width: 25px;
+      height: 25px;
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+    .en_sec_1_question {font-size: 20px;}
+  }
 
+  // 섹션 2_수술정보
+  .en_sec_2{margin-bottom: 90px;}
+  .en_sec_2_imgbox {
+  width: 100% !important;
+  height: 240px !important;
+  }
+
+  // 섹션 3_수술방법
+  .en_sec_3 {margin-bottom: 90px;}
+  .en_sec_3_contents {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    .en_sec_3_box {
+     width: 100%;
+     max-width: 1000px; /* 가운데 정렬 위해 */
+     display: flex;
+     flex-direction: row !important;
+     align-items: center;
+     gap: 0px;
+      .en_sec_3_img1,
+      .en_sec_3_img2,
+      .en_sec_3_img3,
+      .en_sec_3_img4 {
+        width: 417px !important;
+        height: 342px !important;
+        background-size: cover;
+        background-position: center;
+      }
+      .en_sec_3_textbox {
+        width: 50%;
+        text-align: center;
+      }
+    }
+    .en_sec_3_box:nth-child(even) {
+      flex-direction: row-reverse !important;
+      text-align: right;
+    }
+  }
+}
 
 
 /* 768px 이하 (태블릿) */
@@ -960,11 +1015,52 @@
   }
 }
 
+/* 431px 이하 (모바일) */
+@media screen and (max-width: 431px) { 
+  //섹션 1_질문대상
+  .eye_sec_title {
+    padding: 0 10px !important;
+    >div {font-size: 40px;}
+  }
+
+  // 섹션 2_수술설명
+  .eye_sec2>div {font-size: 40px;}
+  .eye_sec_2_subtitle{padding: 0 17px;}
+  .eye_sec_2_subtitle>div{font-size: 24px;}
+  .eye2_sec_2_subtitle {padding: 0 10px;}
+  .eye3_sec_2_subtitle {padding: 0 20px;}
+  .eye4_sec_2_subtitle {padding: 0 30px;}
+
+  .eye_sec_2_img {
+    max-width: 280px !important;
+  }
+
+  // 섹션 3_ 수술방법
+  .en_sec_3_subtext {font-size: 22px !important;}
+  .en_sec_3_text {padding: 0 !important;}
+
+  //섹션 5_수술효과
+  .en_sec_5 {margin-bottom: 70px !important;}
+  .en_sec5_imgbox{
+  width: 100%;
+  height: 250px !important;
+  }
+  .eye_effect_img{
+  width: 100%;
+  height: 250px;
+  }
+
+}
+
+
 /* 375px 이하 (모바일) */
 @media screen and (max-width: 375px) { 
   //섹션 1_질문대상
   .eye_sec_title {
-    padding: 0 30px !important;
+    padding: 0 35px !important;
+    >div {
+      font-size: 28px;
+    }
   }
 
   // 섹션 2_수술설명
@@ -990,7 +1086,8 @@
 @media screen and (max-width: 320px) { 
   //섹션 1_질문대상
   .eye_sec_title {
-    padding: 0 10px !important;
+    padding: 0 20px !important;
+    >div {font-size: 28px;}
   }
 
   // 섹션 2_수술설명

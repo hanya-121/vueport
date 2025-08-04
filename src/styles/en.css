@@ -168,6 +168,8 @@
     height: 700px;
   }
 }
+
+
 /* 768px 이하 (태블릿) */
 @media screen and (max-width: 768px) {
   .eye_sec_title {

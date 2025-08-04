@@ -118,7 +118,7 @@
 }
 
 /* 1024px 이하 (패드) */
-@media screen and (max-width: 1024px) and (min-width: 769px) {
+@media screen and (max-width: 1024px) and (min-width: 822px) {
   .en_sec_1 {
     margin-bottom: 90px !important;
   }
@@ -142,8 +142,67 @@
     width: 100% !important;
     height: 240px !important;
   }
-  .eye_sec_2_img {
-    width: 600px !important;
+  .en_sec_3 {
+    margin-bottom: 90px;
+  }
+  .en_sec_3_contents {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+  }
+  .en_sec_3_contents .en_sec_3_box {
+    width: 100%;
+    max-width: 1000px; /* 가운데 정렬 위해 */
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 0px;
+  }
+  .en_sec_3_contents .en_sec_3_box .en_sec_3_img1,
+  .en_sec_3_contents .en_sec_3_box .en_sec_3_img2,
+  .en_sec_3_contents .en_sec_3_box .en_sec_3_img3,
+  .en_sec_3_contents .en_sec_3_box .en_sec_3_img4 {
+    width: 417px !important;
+    height: 342px !important;
+    background-size: cover;
+    background-position: center;
+  }
+  .en_sec_3_contents .en_sec_3_box .en_sec_3_textbox {
+    width: 50%;
+    text-align: center;
+  }
+  .en_sec_3_contents .en_sec_3_box:nth-child(even) {
+    flex-direction: row-reverse !important;
+    text-align: right;
+  }
+}
+/* 820px 이하 (패드-에어) */
+@media screen and (max-width: 821px) and (min-width: 769px) {
+  .eye_sec_title {
+    padding: 0 0 !important;
+  }
+  .en_sec_1 {
+    margin-bottom: 90px !important;
+  }
+  .en_sec_1 .en_sec_1_box {
+    max-width: 240px !important;
+    height: 150px !important;
+  }
+  .en_sec_1 .en_sec_1_icon {
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .en_sec_1 .en_sec_1_question {
+    font-size: 20px;
+  }
+  .en_sec_2 {
+    margin-bottom: 90px;
+  }
+  .en_sec_2_imgbox {
+    width: 100% !important;
     height: 240px !important;
   }
   .en_sec_3 {
@@ -480,10 +539,6 @@
   }
 }
 /*섹션6 수술주의사항*/
-.en_sec_6 {
-  margin-bottom: 150px;
-}
-
 .en_sec6_title {
   font-size: 64px;
   margin-bottom: 30px;
@@ -596,7 +651,7 @@
 }
 
 .eye_ac_left_img {
-  background: url(../assets/img/eyes/eye5.png) center center/cover;
+  background: url(../assets/img/eyes/eye5.png) center center/cover !important;
 }
 
 .eye6_ac_left_img {
@@ -751,11 +806,13 @@
 }
 
 .eye_sec_2_img {
-  background: url(../assets/img/eyes/eye1img.png) no-repeat;
+  background: url(../assets/img/eyes/eye1img.png) no-repeat !important;
+  background-position: 0 -100px !important;
 }
 
 .eye234_sec_2_img {
-  background: url(../assets/img/eyes/eye234.png) no-repeat;
+  background: url(../assets/img/eyes/eye234.png) no-repeat !important;
+  background-position: 0 -100px !important;
 }
 
 .eye_sec_3_img1 {
@@ -899,9 +956,17 @@
     width: 100% !important;
     height: 240px !important;
   }
+  .eye_sec_2_img {
+    width: 600px !important;
+    height: 240px !important;
+    background-size: cover !important;
+    background-position: center bottom !important;
+  }
   .eye234_sec_2_img {
     width: 100% !important;
     height: 240px !important;
+    background-size: cover !important;
+    background-position: center !important;
   }
   .eye_sec_2_text {
     padding: 0 40px;
@@ -921,7 +986,7 @@
     padding: 0 120px !important;
   }
   .eye_sec_2_subtitle {
-    padding: 0 150px;
+    padding: 0 100px;
   }
   .eye2_sec_2_subtitle {
     padding: 0 120px;
@@ -968,10 +1033,60 @@
     background-size: cover;
   }
 }
+/* 431px 이하 (모바일) */
+@media screen and (max-width: 431px) {
+  .eye_sec_title {
+    padding: 0 10px !important;
+  }
+  .eye_sec_title > div {
+    font-size: 40px;
+  }
+  .eye_sec2 > div {
+    font-size: 40px;
+  }
+  .eye_sec_2_subtitle {
+    padding: 0 17px;
+  }
+  .eye_sec_2_subtitle > div {
+    font-size: 24px;
+  }
+  .eye2_sec_2_subtitle {
+    padding: 0 10px;
+  }
+  .eye3_sec_2_subtitle {
+    padding: 0 20px;
+  }
+  .eye4_sec_2_subtitle {
+    padding: 0 30px;
+  }
+  .eye_sec_2_img {
+    max-width: 280px !important;
+  }
+  .en_sec_3_subtext {
+    font-size: 22px !important;
+  }
+  .en_sec_3_text {
+    padding: 0 !important;
+  }
+  .en_sec_5 {
+    margin-bottom: 70px !important;
+  }
+  .en_sec5_imgbox {
+    width: 100%;
+    height: 250px !important;
+  }
+  .eye_effect_img {
+    width: 100%;
+    height: 250px;
+  }
+}
 /* 375px 이하 (모바일) */
 @media screen and (max-width: 375px) {
   .eye_sec_title {
-    padding: 0 50px !important;
+    padding: 0 35px !important;
+  }
+  .eye_sec_title > div {
+    font-size: 28px;
   }
   .eye_sec_2_subtitle {
     padding: 0 40px;
@@ -1000,7 +1115,10 @@
 /* 320px 이하 (모바일) */
 @media screen and (max-width: 320px) {
   .eye_sec_title {
-    padding: 0 30px !important;
+    padding: 0 20px !important;
+  }
+  .eye_sec_title > div {
+    font-size: 28px;
   }
   .eye_sec_2_subtitle {
     padding: 0 20px;

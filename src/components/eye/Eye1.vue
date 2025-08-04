@@ -29,7 +29,7 @@
   <!-- 섹션 2 수술정보 타이틀 -->
   <v-container fluid class="en_sec_2">
         <v-row class="">
-          <v-col cols="12" class="en_sec_title">
+          <v-col cols="12" class="en_sec_title eye_sec2">
             <div class="title_font">눈썹거상수술</div>
           </v-col>
           <v-col cols="12" class="en_sec_2_subtitle eye_sec_2_subtitle">
